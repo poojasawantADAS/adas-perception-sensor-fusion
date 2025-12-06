@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.10)
+project(ADAS_Perception_Sensor_Fusion)
+set(CMAKE_CXX_STANDARD 20)
+add_subdirectory(src)
