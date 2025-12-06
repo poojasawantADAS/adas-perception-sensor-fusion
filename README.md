@@ -23,5 +23,5 @@ This repository contains a real-time multi-sensor perception and fusion pipeline
 
 ## Author
 **Pooja Sawant**  
-Senior ADAS / Perception Engineer 🚘🤖  
+Senior ADAS / Perception Engineer.  
 Michigan, USA  
