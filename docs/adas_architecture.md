@@ -9,25 +9,25 @@ and support safe driving decisions such as maintaining distance or avoiding coll
 
 ### Architecture Description
 
-**Sensors**: Camera, Radar, and LiDAR provide raw environmental data such as images,
+- ***Sensors***:  Camera, Radar, and LiDAR provide raw environmental data such as images,
   distance, and relative velocity of surrounding objects.
   
-**Perception**: Raw sensor data is processed to detect lanes, vehicles, pedestrians,
+- ***Perception***:  Raw sensor data is processed to detect lanes, vehicles, pedestrians,
   and other relevant objects in the environment.
 
-**Tracking**: Tracking algorithms maintain object identity over time and estimate
+- ***Tracking***:  Tracking algorithms maintain object identity over time and estimate
   motion parameters such as velocity, reducing noise from frame-by-frame detections.
 
-**Sensor Fusion**: Outputs from multiple sensors are combined to improve accuracy
+- ***Sensor Fusion***:  Outputs from multiple sensors are combined to improve accuracy
   and robustness, especially under challenging conditions.
 
-**Planning**: Based on the fused and tracked object information, the system decides
+- ***Planning***:  Based on the fused and tracked object information, the system decides
   appropriate vehicle behavior such as maintaining speed or slowing down.
 
-**Control**: Planning decisions are converted into control commands for steering,
+- ***Control***:  Planning decisions are converted into control commands for steering,
   braking, or acceleration.
 
-**Actuation**: Control commands are executed by the vehicle’s physical systems.
+- ***Actuation***:  Control commands are executed by the vehicle’s physical systems.
 
 
 
