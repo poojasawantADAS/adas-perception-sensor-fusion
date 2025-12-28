@@ -5,7 +5,7 @@ and support safe driving decisions such as maintaining distance or avoiding coll
 
 
 ## High-Level ADAS Architecture
-![ADAS Architecture](images/adas_architecture.png)
+![ADAS System Architecture](images/adas_architecture.JPG)
 
 ### Architecture Description
 
