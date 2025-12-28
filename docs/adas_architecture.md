@@ -5,42 +5,7 @@ and support safe driving decisions such as maintaining distance or avoiding coll
 
 
 ## High-Level ADAS Architecture
-
-┌───────────────────────────┐
-│        Sensors            │
-│  Camera | Radar | LiDAR   │
-└─────────────┬─────────────┘
-              ↓
-┌───────────────────────────┐
-│        Perception         │
-│ Object Detection & Class │
-└─────────────┬─────────────┘
-              ↓
-┌───────────────────────────┐
-│         Tracking          │
-│ State Estimation (x,v,a) │
-└─────────────┬─────────────┘
-              ↓
-┌───────────────────────────┐
-│       Sensor Fusion       │
-│ Multi-Sensor Association │
-└─────────────┬─────────────┘
-              ↓
-┌───────────────────────────┐
-│         Planning          │
-│ Path & Behavior Decision │
-└─────────────┬─────────────┘
-              ↓
-┌───────────────────────────┐
-│          Control          │
-│ Steering / Brake / Torque│
-└─────────────┬─────────────┘
-              ↓
-┌───────────────────────────┐
-│     Vehicle Actuators     │
-│ EPS | Brake | Powertrain │
-└───────────────────────────┘
-
+![ADAS Architecture](images/adas_architecture.png)
 
 ### Architecture Description
 
