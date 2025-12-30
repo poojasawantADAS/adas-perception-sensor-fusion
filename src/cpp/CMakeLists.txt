@@ -6,12 +6,27 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+
 # Library for ACC decision logic
 add_library(acc_decision
     decision/acc_decision.cpp
 )
-
 target_include_directories(acc_decision
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/decision
+)
+
+
+# Perception Core Library
+add_library(perception_core
+    perception/image_frame.cpp
+    perception/perception_pipeline.cpp
+)
+target_include_directories(perception_core
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/perception
+)
+target_link_libraries(perception_core
+    PUBLIC
+        acc_decision
 )
