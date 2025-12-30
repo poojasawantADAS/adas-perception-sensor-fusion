@@ -49,3 +49,5 @@ or certification processes.
 The planning module determines the desired vehicle behavior based on perceived
 environment and driving goals. The controller converts planning decisions into
 low-level actuation commands while ensuring smoothness and passenger comfort.
+
+**Note**  : The ACC decision logic is implemented in both Python 3.10.x and C++20 to reflect typical ADAS development workflows
