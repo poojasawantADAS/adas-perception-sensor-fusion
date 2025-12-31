@@ -30,3 +30,24 @@ target_link_libraries(perception_core
     PUBLIC
         acc_decision
 )
+
+
+#Opencv + excecutable
+find_package(OpenCV REQUIRED)
+
+add_executable(adas_demo
+    main.cpp
+)
+
+target_link_libraries(adas_demo
+    PRIVATE
+        perception_core
+        acc_decision
+        ${OpenCV_LIBS}
+)
+
+target_include_directories(adas_demo
+    PRIVATE
+        ${OpenCV_INCLUDE_DIRS}
+)
+
