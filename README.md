@@ -17,9 +17,6 @@ This repository contains a real-time multi-sensor perception and fusion pipeline
 - GitHub Actions (CI)
 - (Later: OpenCV / PCL optional)
 
-## Milestones
-- Day 1: Project setup + ImageFrame class 
-- Day 2+: Lidar simulation, thread-safe pipelines, unit tests
 
 ## Author
 **Pooja Sawant**  
