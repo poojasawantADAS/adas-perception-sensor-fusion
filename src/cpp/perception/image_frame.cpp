@@ -1,12 +1,11 @@
 #include "image_frame.hpp"
 
-ImageFrame::ImageFrame(const cv::Mat& img, TimePoint ts)
-    : image_(img.clone()), timestamp_(ts) {}
-
-const cv::Mat& ImageFrame::image() const {
-    return image_;
+ImageFrame::ImageFrame(TimePoint timestamp)
+    : timestamp_(timestamp)
+{
 }
 
-ImageFrame::TimePoint ImageFrame::timestamp() const {
+ImageFrame::TimePoint ImageFrame::timestamp() const
+{
     return timestamp_;
 }

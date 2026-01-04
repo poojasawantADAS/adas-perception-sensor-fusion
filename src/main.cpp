@@ -1,4 +1,4 @@
-#include "ImageFrame.h"
+#include "image_frame.hpp"
 #include <iostream>
 
 int main() {
