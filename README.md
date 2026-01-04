@@ -1,6 +1,7 @@
 # ADAS Perception Sensor Fusion
 
-This repository contains a real-time multi-sensor perception and fusion pipeline for ADAS systems using C++20 and Python. The project simulates camera and lidar data streams, performs synchronous data processing, and demonstrates foundational perception capabilities used in autonomous and intelligent vehicles.
+This repository contains a C++20–based ADAS perception pipeline built to explore system structure, software integration, and incremental development, rather than advanced perception algorithms. The project reflects how complex automotive software is typically developed: starting with a stable executable, defining clear data boundaries, and expanding functionality in controlled steps.
+
 
 ## Features (Planned)
  1. Simulated camera and lidar input  
