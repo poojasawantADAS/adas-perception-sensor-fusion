@@ -9,8 +9,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-set(OpenCV_DIR "C:/opencv/build")
-#find_package(OpenCV REQUIRED)
+#set(OpenCV_DIR "C:/opencv/build/x64/vc16")
+#set(OpenCV_DIR "C:/opencv/build")
+#set(OpenCV_RUNTIME "vc16/x64")
+find_package(OpenCV REQUIRED)
 
 
 # Enable good compile warnings (optional but recommended)
