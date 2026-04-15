@@ -8,3 +8,6 @@ out/
 # CMake
 CMakeCache.txt
 CMakeFiles/
+data/
+*.avi
+yolov8n.pt

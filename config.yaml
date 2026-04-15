@@ -1,0 +1,36 @@
+# ═══════════════════════════════════════════════════
+# ADAS Perception Pipeline — Configuration File
+# Edit ONLY this file. Never modify source code.
+# ═══════════════════════════════════════════════════
+
+video:
+  path: "data/dashcam2.avi"
+  max_seconds: 30
+
+detection:
+  enabled: true
+  model: "yolov8n"
+  confidence: 0.4
+  classes:
+    - car
+    - pedestrian
+    - truck
+    - cyclist
+    - motorcycle
+    - bus
+
+lane_detection:
+  enabled: true
+  sensitivity: medium
+  auto_calibrate: true
+
+ldw:
+  enabled: true
+  warning_zone: 0.35
+
+output:
+  save_video: true
+  show_ids: true
+  show_confidence: true
+  show_fps: true
+  path: "/mnt/d/Prep/Self Prep Plann/Github Project/camera Data/Output/output_tracked.avi"
