@@ -1,0 +1,47 @@
+name: Build ADAS Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-cpp:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake g++ libopencv-dev
+
+    - name: Build C++ core
+      run: |
+        mkdir -p build && cd build
+        cmake .. && make
+
+    - name: Run C++ tests
+      run: |
+        ./build/src/adas_perception_app
+
+  build-python:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Python dependencies
+      run: |
+        pip install opencv-python ultralytics pyyaml numpy
+
+    - name: Check Python modules
+      run: |
+        python3 -c "import cv2; print('OpenCV OK')"
+        python3 -c "from ultralytics import YOLO; print('YOLO OK')"
+        python3 -c "import yaml; print('PyYAML OK')"
